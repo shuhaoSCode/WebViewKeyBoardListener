@@ -13,7 +13,7 @@
 		}
 		  
 		dependencies {
-	       compile 'com.github.shuhaoSCode:WebViewKeyBoardListener:-SNAPSHOT'
+	       compile 'com.github.shuhaoSCode:WebViewKeyBoardListener:1.0.0'
 		}
 
 
@@ -27,5 +27,5 @@
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        KeyBoardListener.getInstance(this).init();
+        KeyBoardListener.getInstance().init(this);
     }
