@@ -11,7 +11,6 @@ import android.widget.FrameLayout;
  */
 
 public class KeyBoardListener {
-    private Activity activity;
 
     private View mChildOfContent;
     private int usableHeightPrevious;
@@ -20,19 +19,18 @@ public class KeyBoardListener {
     private static KeyBoardListener keyBoardListener;
 
 
-    public static KeyBoardListener getInstance(Activity activity) {
-        keyBoardListener = new KeyBoardListener(activity);
+    public static KeyBoardListener getInstance() {
+        keyBoardListener = new KeyBoardListener();
         return keyBoardListener;
     }
 
 
-    public KeyBoardListener(Activity activity) {
+    public KeyBoardListener() {
         super();
-        this.activity = activity;
     }
 
 
-    public void init() {
+    public void init(Activity activity) {
         FrameLayout content = (FrameLayout) activity
                 .findViewById(android.R.id.content);
         mChildOfContent = content.getChildAt(0);
