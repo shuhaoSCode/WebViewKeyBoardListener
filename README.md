@@ -29,3 +29,4 @@
         setContentView(R.layout.activity_main);
         KeyBoardListener.getInstance().init(this);
     }
+[![](https://jitpack.io/v/shuhaoSCode/WebViewKeyBoardListener.svg)](https://jitpack.io/#shuhaoSCode/WebViewKeyBoardListener)
